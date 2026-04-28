@@ -8,7 +8,7 @@ from tensorflow.keras.models import load_model
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-MODEL_PATH = os.path.join(BASE_DIR, "ml_models", "aapl_lstm_model.keras")
+MODEL_PATH = os.path.join(BASE_DIR, "ml_models", "aapl_lstm_model.h5")
 SCALER_PATH = os.path.join(BASE_DIR, "ml_models", "aapl_scaler.save")
 
 
