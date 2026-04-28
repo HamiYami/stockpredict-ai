@@ -12,7 +12,7 @@ MODEL_PATH = os.path.join(BASE_DIR, "ml_models", "aapl_lstm_model.keras")
 SCALER_PATH = os.path.join(BASE_DIR, "ml_models", "aapl_scaler.save")
 
 
-model = load_model(MODEL_PATH)
+model = load_model(MODEL_PATH, compile=False)
 scaler = joblib.load(SCALER_PATH)
 
 
