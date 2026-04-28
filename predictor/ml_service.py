@@ -18,7 +18,7 @@ scaler = joblib.load(SCALER_PATH)
 def predict_aapl():
 
     # Load model ONLY when endpoint is called
-    model = Sequential([
+    model = Sequential([ 
         Input(shape=(60,1)),
         LSTM(50, return_sequences=True),
         Dropout(0.2),
