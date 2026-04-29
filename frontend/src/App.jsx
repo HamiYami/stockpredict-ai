@@ -48,7 +48,7 @@ function App() {
       setLoading(true);
 
       const response = await axios.get(
-        "http://127.0.0.1:8000/api/predict/"
+        "https://stockpredict-ai.onrender.com/api/predict/" 
       );
 
       setResult(response.data);
